@@ -11,8 +11,8 @@ const Books = () => {
         
         const fechAllBooks = async ()=>{
             try{
-                 /*  const res = await axios.get("http://localhost:8800/books");  */ 
-              const res = await axios.get("http://kostyakalashnikov607.hosted-by-host4.biz:3000/books");
+                   const res = await axios.get("http://localhost:8800/books");  
+            /*   const res = await axios.get("http://kostyakalashnikov607.hosted-by-host4.biz:3000/books"); */
                 /* const res = await axios.get("http://185.151.245.185/books"); */
                 setBooks(res.data);
             }catch(err){

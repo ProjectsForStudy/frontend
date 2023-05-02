@@ -43,8 +43,8 @@ const Update = () => {
     const handleClick = async e =>{
         e.preventDefault();
         try{
-             /*  await axios.put("http://localhost:8800/books/" + bookId, book);  */
-            await axios.put("http://kostyakalashnikov607.hosted-by-host4.biz:3000/books/" + bookId, book);
+               await axios.put("http://localhost:8800/books/" + bookId, book);  
+            /* await axios.put("http://kostyakalashnikov607.hosted-by-host4.biz:3000/books/" + bookId, book); */
            /* await axios.put("http://185.151.245.185/books/" + bookId, book); */
             navigate("/");
         }catch(err){

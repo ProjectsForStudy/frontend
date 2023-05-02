@@ -19,8 +19,8 @@ const Add = () => {
     const handleClick = async e =>{
         e.preventDefault();
         try{
-              /* await axios.post("http://localhost:8800/books", book); */
-             await axios.post("http://kostyakalashnikov607.hosted-by-host4.biz:3000/books", book);
+               await axios.post("http://localhost:8800/books", book); 
+           /*   await axios.post("http://kostyakalashnikov607.hosted-by-host4.biz:3000/books", book); */
           /*  await axios.post("http://185.151.245.185/books", book); */
             navigate("/");
         }catch(err){
