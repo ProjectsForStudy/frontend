@@ -19,8 +19,8 @@ const Add = () => {
     const handleClick = async e =>{
         e.preventDefault();
         try{
-             /* await axios.post("http://localhost:8800/books", book);  */
-             await axios.post("http://localhost:3000/books", book); 
+              /* await axios.post("http://localhost:8800/books", book); */
+             await axios.post("http://kostyakalashnikov607.hosted-by-host4.biz:3000/books", book);
           /*  await axios.post("http://185.151.245.185/books", book); */
             navigate("/");
         }catch(err){
@@ -30,7 +30,7 @@ const Add = () => {
 
     return (
         <div className="form">
-            <h1> Add</h1>
+            <h1> Add (test)</h1>
             <input type="text" placeholder="title" onChange={handleChange} name="title" />
             <input type="text" placeholder="desc" onChange={handleChange} name="desc" />
             <input type="number" placeholder="price" onChange={handleChange} name="price" />
